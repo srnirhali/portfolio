@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input} from '@angular/core';
 
-export interface Vegetable {
-  name: string;
-}
+import { Projects } from 'src/app/projects';
+
+
 
 @Component({
   selector: 'app-cards',
@@ -10,17 +10,12 @@ export interface Vegetable {
   styleUrls: ['./cards.component.scss']
 })
 export class CardsComponent implements OnInit {
-  vegetables: Vegetable[] = [
-    {name: 'apple'},
-    {name: 'banana'},
-    {name: 'strawberry'},
-    {name: 'orange'},
-    {name: 'kiwi'},
-    {name: 'cherry'},
-  ];
+  @Input()
+  pro: any; 
   constructor() { }
 
   ngOnInit(): void {
+  console.log(this.pro)
   }
 
 }

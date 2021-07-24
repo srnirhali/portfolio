@@ -1,11 +1,12 @@
 
-  <app-toolbar style="height: 100%; background-color: black;" ></app-toolbar>
-
+  <app-toolbar style="height: 100%; " ></app-toolbar>
+<app-header></app-header>
   
-<div style="margin: 0 10% 0 10%;">
+<div style="margin: 5% 10% 0 10%;" >
   <h1 class="mat-h1">Projects</h1>
-  <app-cards></app-cards>
+  <div *ngFor="let project of projects">
+  <app-cards  [pro] = "project" ></app-cards>
+</div>
   
-  <app-cards></app-cards>
 </div>
 

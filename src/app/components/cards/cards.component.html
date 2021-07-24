@@ -1,6 +1,6 @@
 <mat-card class="example-card">
     <mat-card-header>
-        <mat-card-title>Project 1</mat-card-title>
+        <mat-card-title>{{pro.projectName}}</mat-card-title>
         <mat-card-subtitle>AT company</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
@@ -15,8 +15,8 @@
         >
         <span
           class="mat-chip  mat-primary mat-standard-chip"
-          *ngFor="let vegetable of vegetables">
-          {{vegetable.name}}
+          *ngFor="let project of pro.tools">
+          {{project}}
     </span>
       </mat-chip-list>
       

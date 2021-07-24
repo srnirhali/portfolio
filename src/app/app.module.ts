@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MaterialModule } from 'src/app/material-module'
 import { HttpClientModule } from '@angular/common/http';
-import { CardsComponent } from './components/cards/cards.component'
+import { CardsComponent } from './components/cards/cards.component';
+import { HeaderComponent } from './components/header/header.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CardsComponent
+    CardsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

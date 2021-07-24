@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component  } from '@angular/core';
 import { MatIconRegistry } from '@angular/material/icon';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Projects } from './projects';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title = 'portfolio';
+  projects= Projects
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer){
     this.matIconRegistry.addSvgIcon(
       'insta',
@@ -21,6 +24,9 @@ export class AppComponent {
       'linkedin',
       this.domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/linkedin.svg')
     );
+    console.log(this.projects.length)
   }
-  title = 'portfolio';
+  
+  
+
 }
