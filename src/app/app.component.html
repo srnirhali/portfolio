@@ -8,5 +8,13 @@
   <app-cards  [pro] = "project" ></app-cards>
 </div>
   
+<div style="margin-top: 64px;" >
+  <h1 class="mat-h1">Educations</h1>
+  <div *ngFor="let education of educations">
+  <app-educard [edu] = "education" ></app-educard>
+</div>
+
+
+<br>
 </div>
 

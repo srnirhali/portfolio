@@ -8,14 +8,16 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { MaterialModule } from 'src/app/material-module'
 import { HttpClientModule } from '@angular/common/http';
 import { CardsComponent } from './components/cards/cards.component';
-import { HeaderComponent } from './components/header/header.component'
+import { HeaderComponent } from './components/header/header.component';
+import { EducardComponent } from './components/educard/educard.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     CardsComponent,
-    HeaderComponent
+    HeaderComponent,
+    EducardComponent
   ],
   imports: [
     BrowserModule,
