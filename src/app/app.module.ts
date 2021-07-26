@@ -9,7 +9,8 @@ import { MaterialModule } from 'src/app/material-module'
 import { HttpClientModule } from '@angular/common/http';
 import { CardsComponent } from './components/cards/cards.component';
 import { HeaderComponent } from './components/header/header.component';
-import { EducardComponent } from './components/educard/educard.component'
+import { EducardComponent } from './components/educard/educard.component';
+import { HomepageComponent } from './components/homepage/homepage.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EducardComponent } from './components/educard/educard.component'
     ToolbarComponent,
     CardsComponent,
     HeaderComponent,
-    EducardComponent
+    EducardComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

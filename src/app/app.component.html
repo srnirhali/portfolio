@@ -1,20 +1,23 @@
 
-  <app-toolbar style="height: 100%; " ></app-toolbar>
-<app-header></app-header>
-  
-<div style="margin: 5% 10% 0 10%;" >
-  <h1 class="mat-h1">Projects</h1>
-  <div *ngFor="let project of projects">
-  <app-cards  [pro] = "project" ></app-cards>
-</div>
-  
-<div style="margin-top: 64px;" >
-  <h1 class="mat-h1">Educations</h1>
-  <div *ngFor="let education of educations">
-  <app-educard [edu] = "education" ></app-educard>
-</div>
+  <div style="height: 394px;">
+
+  <app-toolbar style="position: fixed; z-index: 100;"></app-toolbar>
 
 
+  <app-header style="padding-top: 56px; width: 100%; height: 330px;"></app-header>
+</div>
+  
+ <div style="margin: 5% 10% 0 10%; " >
+    <h1 class="mat-h1">Projects</h1>
+    <div *ngFor="let project of projects">
+    <app-cards  [pro] = "project" ></app-cards>
+  </div>
+    
+  <div style="margin-top: 64px;" >
+    <h1 class="mat-h1">Educations</h1>
+    <div *ngFor="let education of educations">
+    <app-educard [edu] = "education" ></app-educard>
+  </div>
+
+<div style="height: 5000px;"></div>
 <br>
-</div>
-
