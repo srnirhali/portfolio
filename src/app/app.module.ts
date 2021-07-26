@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { EducardComponent } from './components/educard/educard.component';
 import { HomepageComponent } from './components/homepage/homepage.component'
 
+
 @NgModule({
   declarations: [
     AppComponent,
