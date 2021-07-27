@@ -10,7 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardsComponent } from './components/cards/cards.component';
 import { HeaderComponent } from './components/header/header.component';
 import { EducardComponent } from './components/educard/educard.component';
-import { HomepageComponent } from './components/homepage/homepage.component'
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { ProjectsectionComponent } from './components/projectsection/projectsection.component'
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HomepageComponent } from './components/homepage/homepage.component'
     CardsComponent,
     HeaderComponent,
     EducardComponent,
-    HomepageComponent
+    HomepageComponent,
+    ProjectsectionComponent
   ],
   imports: [
     BrowserModule,

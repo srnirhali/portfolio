@@ -1,0 +1,18 @@
+<div class="title-content">
+  <div>
+    <mat-icon
+      style=""
+      svgIcon="project"
+    ></mat-icon>
+  </div>
+  <div><span class="title-body">Personal Projects</span></div>
+</div>
+<div class="project-main-content">
+<div   *ngFor="let projectsa of projectsarr">
+<div class="project-content">
+<div class="project-card" *ngFor="let project of projectsa">
+  <app-cards  [pro]="project"></app-cards>
+</div>
+</div>
+</div>
+</div>

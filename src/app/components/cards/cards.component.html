@@ -1,6 +1,15 @@
-<mat-card class="example-card">
+<mat-card class="example-card" style=" height: 99%;">
     <mat-card-header>
-        <mat-card-title>{{pro.projectName}}</mat-card-title>
+        <mat-card-title>{{pro.projectName}} <a
+          href={{pro.link}}
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with share icon"
+        >
+        <mat-icon svgIcon="github" >github</mat-icon>
+        
+          
+      </a> </mat-card-title>
         <mat-card-subtitle>AT company</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>

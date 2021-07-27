@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-
-html, body { height: 100%; }
+@font-face {
+  font-family: "vegas";
+  src: local("vegas"), url(./assets/fonts/VeganStylePersonalUse-5Y58.ttf) format("truetype");
+}
+html, body { height: 100%; background-color: #fff; color: #673ab7; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .color-primary {
     background: #673ab7;
@@ -17,5 +20,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     color: #fff;
   }
   .img-rounded{
-    border-radius: 50%;
+    border-radius: 40% 0%;
+}
+mat-icon,.color-primary {
+  color: #673ab7;
+  fill: #673ab7;
+}
+
+.section{
+  color: #673ab7;
+ padding: 50px 100px;
+  background-color: #fff;
+  
+}
+
+@media screen and (max-width:1000px) {
+  .section{
+    padding: 50px;
+     
+  }
 }

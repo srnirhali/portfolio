@@ -1,12 +1,12 @@
-<mat-toolbar class="mat-elevation-z6" color="primary" style="position: fixed;">
+<mat-toolbar class="mat-elevation-z1"   style="position: fixed; background-color: #fff;">
   <button
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with menu icon"
   >
-    <mat-icon>menu</mat-icon>
+    <mat-icon >menu</mat-icon>
   </button>
-  <span>Protfolio</span>
+  <span style="font-family: vegas; font-size: 30px; font-weight: 500; color: #673ab7;" uppercase>Shivam Nirhali</span>
   <span class="example-spacer"></span>
   <a
   href="https://www.instagram.com/shivam_nirhali/"
@@ -14,7 +14,7 @@
     class="example-icon favorite-icon"
     aria-label="Example icon-button with heart icon"
   >
-    <mat-icon svgIcon="insta">insta</mat-icon>
+    <mat-icon style="fill: #673ab7;" svgIcon="insta">insta</mat-icon>
 </a>
   <a
     href="https://github.com/srnirhali/"
@@ -22,7 +22,7 @@
     class="example-icon"
     aria-label="Example icon-button with share icon"
   >
-  <mat-icon svgIcon="github" >github</mat-icon>
+  <mat-icon  svgIcon="github" >github</mat-icon>
   
     
 </a>
@@ -32,8 +32,8 @@
     class="example-icon"
     aria-label="Example icon-button with share icon"
   >
-    <mat-icon svgIcon="linkedin">linkedin</mat-icon>
+    <mat-icon style="fill: #673ab7;" svgIcon="linkedin">linkedin</mat-icon>
 </a>
-<button mat-button (click)="download()">Download Resume </button>
+<button mat-icon-button (click)="download()"><mat-icon>download</mat-icon></button>
 
 </mat-toolbar>

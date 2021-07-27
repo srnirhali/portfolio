@@ -9,15 +9,14 @@ export class FileService {
 
  
 
-  getTextFile(filename: string) {
+  getResume(filename: string) {
     // The Observable returned by get() is of type Observable<string>
     // because a text response was specified.
     // There's no need to pass a <string> type parameter to get().
     return this.http.get("assets/Shivam_Nirhali_Resume.pdf", {responseType: 'blob'})
       .pipe(
         tap( // Log the result or error
-          data => console.log(filename, data),
-          
+          data => console.log(filename, data),  
         )
       );
   }

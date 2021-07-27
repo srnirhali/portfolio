@@ -26,7 +26,18 @@ export class AppComponent {
       'linkedin',
       this.domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/linkedin.svg')
     );
-    
+    this.matIconRegistry.addSvgIcon(
+      'school',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/school.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
+      'project',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/project.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
+      'coding',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/coding.svg')
+    );
   }
   
   
