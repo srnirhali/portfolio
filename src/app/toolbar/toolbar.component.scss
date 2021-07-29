@@ -1,14 +1,21 @@
 
 
-.example-spacer {
-    flex: 1 1 auto;
-  }
  
 
   img{
       border-radius: 50%;
   }
-  
+
+  mat-drawer-container{
+    background-color: #ddd;
+  }
+
+  .sidenav{
+    text-align: center;
+    display: block;
+    width: 300px;
+   padding: 10px 20px;
+  }
 .color-primary {
     background: #673ab7;
     background-image: initial;

@@ -1,39 +1,39 @@
-<mat-toolbar class="mat-elevation-z1"   style="position: fixed; background-color: #fff;">
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
-    <mat-icon >menu</mat-icon>
-  </button>
-  <span style="font-family: vegas; font-size: 30px; font-weight: 500; color: #673ab7;" uppercase>Shivam Nirhali</span>
-  <span class="example-spacer"></span>
-  <a
-  href="https://www.instagram.com/shivam_nirhali/"
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon style="fill: #673ab7;" svgIcon="insta">insta</mat-icon>
-</a>
-  <a
-    href="https://github.com/srnirhali/"
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-  <mat-icon  svgIcon="github" >github</mat-icon>
-  
-    
-</a>
-  <a
-  href="https://www.linkedin.com/in/srnirhali/"
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
-  >
-    <mat-icon style="fill: #673ab7;" svgIcon="linkedin">linkedin</mat-icon>
-</a>
-<button mat-icon-button (click)="download()"><mat-icon>download</mat-icon></button>
 
-</mat-toolbar>
+<mat-drawer-container class="container" fullscreen>
+  
+  <mat-drawer #drawer class="sidenav" mode="over">
+    <div style="line-height: 3;">
+    <span style="font-family: vegas; font-size: 20px; font-weight: 500; color: #673ab7;" uppercase>Shivam Nirhali</span>
+    <div>
+    <a mat-button  routerLink="/" (click)=" drawer.close() " routerLinkActive="active"  > About me</a>
+  </div>
+  <div>
+      <a mat-button routerLink="/contact" (click)=" drawer.close() "  routerLinkActive="active" > contact me</a>
+    </div>
+  </div>
+  </mat-drawer>
+
+  <div class="">
+    <div>
+      <mat-toolbar class="mat-elevation-z1"   style="position: fixed; z-index: 1; margin-right: 2px; background-color: #fff;">
+        <button
+          mat-icon-button
+          class="example-icon"
+          (click)="drawer.toggle()"
+          aria-label="Example icon-button with menu icon"
+        >
+          <mat-icon >menu</mat-icon>
+        </button>
+        <div style="width: 100%; text-align: center;">
+        <span style="font-family: vegas; font-size: 30px; font-weight: 500; color: #673ab7;" uppercase>Shivam Nirhali</span>
+      </div>
+      
+      </mat-toolbar>
+      <div style="padding-top: 56px;">
+        <router-outlet></router-outlet>
+        
+</div>
+  </div>
+  </div>
+
+</mat-drawer-container>

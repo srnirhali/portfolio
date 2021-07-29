@@ -21,7 +21,7 @@ export class SkillsComponent implements OnInit {
    
 
     for (let index = 0; index < this.total; index++) {
-      console.log('this.projectsarr')
+      
       this.skillsarr[index] = this.skills.slice(this.start,this.end)
       this.start=this.end
       this.end = this.end + this.per

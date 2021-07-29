@@ -3,7 +3,7 @@
   font-family: "vegas";
   src: local("vegas"), url(./assets/fonts/VeganStylePersonalUse-5Y58.ttf) format("truetype");
 }
-html, body { height: 100%; background-color: #fff; color: #673ab7; }
+html, body { height: 100%; background-color: #ddd; color: #673ab7; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .color-primary {
     background: #673ab7;
@@ -27,17 +27,50 @@ mat-icon,.color-primary {
 }
 
 .section{
-  color: #fff;
-  padding: 100px 100px;
-  background-color: #673ab7;
-  -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  color: #673ab7;
+  padding: 50px 100px;
+  background-color: #ddd;
+  
   
 }
 .section-white{
   color: #673ab7;
-  padding: 100px 100px;
-  background-color: #fff;
+  padding: 50px 100px;
+  background-color: #ddd;
+  
+}
+
+.header-section{
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px ;
+  background-color: #673ab7;
+  padding-bottom: 120px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+.footer-section{
+  padding-top: 120px;
+  color: #fff;
+  background-color: #673ab7;
+  
+  -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+}
+mat-divider{
+ background-color: #673ab7; height: 3px; border-radius: 20px;
+}
+
+
+
+.example-sidenav {
+  width: 300px;
+  padding: 20px;
+}
+
+
+@media screen and (max-width:1000px) {
+ 
   
 }
 
@@ -50,6 +83,16 @@ mat-icon,.color-primary {
     
     padding: 50px 50px;
     
+  }
+  .header-section{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+     
+  }
+  .footer-section{
+    padding-top: 100px;
     
   }
 }

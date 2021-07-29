@@ -15,6 +15,17 @@
     -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
   }
+  mat-divider{
+   background-color: #673ab7; height: 3px; border-radius: 20px;
+  }
+  
+  
+  
+  .example-sidenav {
+    width: 300px;
+    padding: 20px;
+  }
+  
   
   @media screen and (max-width:1000px) {
     .header-section{

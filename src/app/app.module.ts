@@ -13,7 +13,9 @@ import { EducardComponent } from './components/educard/educard.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { ProjectsectionComponent } from './components/projectsection/projectsection.component';
 import { SkillsComponent } from './components/skills/skills.component';
-import { FooterComponent } from './components/footer/footer.component'
+import { FooterComponent } from './components/footer/footer.component';
+import { SkillcardComponent } from './components/skillcard/skillcard.component';
+import { ContactComponent } from './components/contact/contact.component'
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { FooterComponent } from './components/footer/footer.component'
     HomepageComponent,
     ProjectsectionComponent,
     SkillsComponent,
-    FooterComponent
+    FooterComponent,
+    SkillcardComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

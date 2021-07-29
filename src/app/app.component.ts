@@ -12,6 +12,7 @@ import { Educations } from './education';
 export class AppComponent {
   title = 'portfolio';
   projects= Projects;
+  showFiller = false;
   educations =Educations;
   constructor(private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer,  ){
     this.matIconRegistry.addSvgIcon(
