@@ -1,0 +1,22 @@
+
+<div class="title-content">
+    <div>
+      <mat-icon
+        
+        svgIcon="project"
+      ></mat-icon>
+    </div>
+    <div><span class="title-body">Personal Projects</span></div>
+  </div>
+  <div class="project-main-content">
+  <div   *ngFor="let skillsa of skillsarr">
+  <div class="project-content">
+  <div class="project-card" *ngFor="let skill of skillsa">
+    <p style=" width: 100%; text-align: center; font-weight: 400; font-size: 24px;" >{{skill.name}}</p>
+    <div style="width: 100%; height: 2px; border-style: solid; border-radius: 10px; border-width: 1.5px; ">
+    <div  [style.width]="skill.percentage" style=" height: 2px; background-color: #673ab7 ;" ></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>

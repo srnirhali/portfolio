@@ -11,7 +11,9 @@ import { CardsComponent } from './components/cards/cards.component';
 import { HeaderComponent } from './components/header/header.component';
 import { EducardComponent } from './components/educard/educard.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
-import { ProjectsectionComponent } from './components/projectsection/projectsection.component'
+import { ProjectsectionComponent } from './components/projectsection/projectsection.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { FooterComponent } from './components/footer/footer.component'
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { ProjectsectionComponent } from './components/projectsection/projectsect
     HeaderComponent,
     EducardComponent,
     HomepageComponent,
-    ProjectsectionComponent
+    ProjectsectionComponent,
+    SkillsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

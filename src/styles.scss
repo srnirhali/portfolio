@@ -11,8 +11,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
+    
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -28,8 +27,16 @@ mat-icon,.color-primary {
 }
 
 .section{
+  color: #fff;
+  padding: 100px 100px;
+  background-color: #673ab7;
+  -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  
+}
+.section-white{
   color: #673ab7;
- padding: 50px 100px;
+  padding: 100px 100px;
   background-color: #fff;
   
 }
@@ -38,5 +45,23 @@ mat-icon,.color-primary {
   .section{
     padding: 50px;
      
+  }
+  .section-white{
+    
+    padding: 50px 50px;
+    
+    
+  }
+}
+@media screen and (max-width:600px) {
+  .section{
+    padding: 50px 0px;
+     
+  }
+  .section-white{
+    
+    padding: 50px 0px;
+    
+    
   }
 }

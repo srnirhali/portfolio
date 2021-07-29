@@ -7,6 +7,14 @@
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
   }
+  .footer-section{
+    padding-top: 120px;
+    color: #fff;
+    background-color: #673ab7;
+    
+    -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  }
   
   @media screen and (max-width:1000px) {
     .header-section{
@@ -16,4 +24,9 @@
       padding-bottom: 120px;
        
     }
+    .footer-section{
+      padding-top: 100px;
+      
+    }
+    
   }
