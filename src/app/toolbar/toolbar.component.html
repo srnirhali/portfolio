@@ -15,8 +15,11 @@
 
   <div class="">
     <div>
-      <mat-toolbar class="mat-elevation-z1"   style="position: fixed; z-index: 1; margin-right: 2px; background-color: #fff;">
-        <button
+      <mat-toolbar class="mat-elevation-z1"   style=" position: fixed; z-index: 1;  margin-right: 2px; background-color: #fff;">
+        
+        <div style="width: 100%; text-align: center;">
+          <button
+          style="float: left;"
           mat-icon-button
           class="example-icon"
           (click)="drawer.toggle()"
@@ -24,14 +27,16 @@
         >
           <mat-icon >menu</mat-icon>
         </button>
-        <div style="width: 100%; text-align: center;">
-        <span style="font-family: vegas; font-size: 30px; font-weight: 500; color: #673ab7;" uppercase>Shivam Nirhali</span>
+        <span style="font-family: vegas; font-size: 30px; font-weight: 500; color: #673ab7;" >Shivam Nirhali</span>
       </div>
       
       </mat-toolbar>
       <div style="padding-top: 56px;">
         <router-outlet></router-outlet>
         
+</div>
+<div class="footer-section">
+  <app-footer></app-footer>
 </div>
   </div>
   </div>

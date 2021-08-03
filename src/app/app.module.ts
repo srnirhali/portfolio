@@ -16,6 +16,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SkillcardComponent } from './components/skillcard/skillcard.component';
 import { ContactComponent } from './components/contact/contact.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 
 @NgModule({
@@ -30,14 +32,17 @@ import { ContactComponent } from './components/contact/contact.component'
     SkillsComponent,
     FooterComponent,
     SkillcardComponent,
-    ContactComponent
+    ContactComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

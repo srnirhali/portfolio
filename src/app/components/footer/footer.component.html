@@ -4,36 +4,55 @@
       <div class="site-banner">
         <div class="site-banner-content">
           <h1 class="site-banner-title">Let's Work Together</h1>
-          <h3 class="site-banner-subtitle">
-            Have a project you'd like to discuss?
-          </h3>
-          <h3>Web / Android / Softaware</h3>
+          
+          <h3>Have a project you'd like to discuss?</h3>
 
-          <button mat-flat-button  style="margin-top: 12px">
+          <button mat-button  style=" margin-top: 12px" routerLink="contact" routerLinkActive="active" >
             Contact me
           </button>
         </div>
       </div>
     </div>
     <div class="site-banner-item " >
+      <div class="footer-icons">
+        <div mat-button>
+          <div class="footer-icons" >
+            Connect with me 
+          </div>
+        </div>
+      </div>
       <div >
-        <div>
+        <div class="footer-icons">
             <a 
+            target="_blank"
+              rel="noopener"
               href="https://www.instagram.com/shivam_nirhali/"
               mat-button>
               <div class="footer-icons" ><mat-icon [inline]=true  svgIcon="insta"></mat-icon> Instagram </div></a>
           </div>
-      <div>
+      <div class="footer-icons">
         <a 
+        target="_blank"
+        rel="noopener"
           href="https://www.instagram.com/shivam_nirhali/"
           mat-button>
           <div class="footer-icons"><mat-icon [inline]=true  svgIcon="linkedin"></mat-icon> LinkedIn </div></a>
       </div>
-      <div >
+      <div class="footer-icons">
         <a 
+        target="_blank"
+        rel="noopener"
         href="https://github.com/srnirhali/"
         mat-button>
             <div class="footer-icons"><mat-icon [inline]=true  svgIcon="github" >github</mat-icon>  Github </div></a>
+      </div>
+      <div class="footer-icons" >
+        <a 
+        target="_blank"
+        rel="noopener"
+        href="mailto:srnirhali@gmail.com"
+        mat-button>
+            <div class="footer-icons"><mat-icon [inline]=true  svgIcon="email" ></mat-icon>  Email </div></a>
       </div>
     </div>
     </div>

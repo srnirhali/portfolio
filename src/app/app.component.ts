@@ -39,6 +39,10 @@ export class AppComponent {
       'coding',
       this.domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/coding.svg')
     );
+    this.matIconRegistry.addSvgIcon(
+      'email',
+      this.domSanitizer.bypassSecurityTrustResourceUrl('assets/icons/email.svg')
+    );
   }
   
   

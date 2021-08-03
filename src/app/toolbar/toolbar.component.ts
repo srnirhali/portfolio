@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FileService } from '../file.service';
+import {FileService} from '../file.service';
 import * as fileSaver from 'file-saver';
 
 @Component({
